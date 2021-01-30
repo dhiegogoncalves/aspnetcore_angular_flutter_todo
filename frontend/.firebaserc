@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "todo-2e4c5": {
+      "hosting": {
+        "frontend": [
+          "todo-2e4c5"
+        ]
+      }
+    }
+  }
+}
