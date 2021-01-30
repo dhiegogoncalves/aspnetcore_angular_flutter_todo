@@ -17,7 +17,9 @@ export class TodayComponent implements OnInit {
 
   ngOnInit(): void {
     this.afAuth.idToken.subscribe(token => {
-      this.service.getTodayTodos(token).subscribe((data: any) => this.todos = data);
+      if (token) {
+        this.service.getTodayTodos(token).subscribe((data: any) => this.todos = data);
+      }
     });
   }
 
